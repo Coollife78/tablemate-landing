@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TableMate | 테이블메이트</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #111;
+      --accent: #00FFD1;
+      --bg: #fdfdfd;
+      --text: #222;
+      --subtext: #666;
+    }
+    body {
+      font-family: 'Pretendard', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #000, #111);
+      color: white;
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 30px;
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      background: #00e0b7;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 24px;
+      border-left: 5px solid var(--accent);
+      padding-left: 15px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      padding: 24px;
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>좋은 인연은, 한 끼 식사에서 시작됩니다.</h1>
+    <p>직업, 인사이트, 그리고 사람. 오늘, TableMate에서 새로운 만남을 시작하세요.</p>
+    <a href="#explore" class="button">모임 둘러보기</a>
+  </header>  <section id="intro">
+    <h2>TableMate란?</h2>
+    <p>TableMate는 <strong>인사이트를 공유하는 밥자리 플랫폼</strong>입니다. 누구나 나눌 이야기가 있고, 그 속에 인사이트가 있습니다.<br><br>
+    남녀 만남이 아닌, <strong>전문가, 직장인, 창작자들이 맛있는 음식과 함께 지식과 경험을 나누는 자리</strong>입니다.<br><br>
+    <strong>편안한 분위기의 핫한 식당</strong>에서 이루어지는 대화는 정보와 영감을 얻는 가장 자연스러운 방식입니다.</p>
+  </section>  <section id="process">
+    <h2>서비스 이용 흐름</h2>
+    <div class="grid">
+      <div class="card"><strong>1. 테이블 신청</strong><br>관심 있는 모임을 선택하고 신청하세요.</div>
+      <div class="card"><strong>2. 매칭 및 결제</strong><br>참가자 승인 후 간편하게 결제합니다.</div>
+      <div class="card"><strong>3. 식사 & 대화</strong><br>공감대 있는 사람들과 분위기 좋은 식당에서!</div>
+      <div class="card"><strong>4. 인사이트 공유</strong><br>각자의 경험과 시선에서 얻는 배움이 있습니다.</div>
+    </div>
+  </section>  <section id="reviews">
+    <h2>실제 후기 (예시)</h2>
+    <div class="grid">
+      <div class="card">
+        “혼자 먹는 식사 대신, 다른 전문가들과의 한 끼가 제 일상에 영감을 줬어요.”<br><small>– 김지연, 성형외과 원장</small>
+      </div>
+      <div class="card">
+        “유튜버와 팬미팅이 이렇게 편안할 수 있나요? 진짜 찐 소통의 시간!”<br><small>– 박준영, 크리에이터</small>
+      </div>
+    </div>
+  </section>  <section id="host">
+    <h2>나도 호스트가 될 수 있나요?</h2>
+    <p>TableMate에서는 누구나 자신의 인사이트와 주제로 테이블을 열 수 있습니다. 당신의 직업과 취향이 누군가에겐 특별한 대화의 시작이 됩니다.</p>
+    <a href="#" class="button">호스트 신청하기</a>
+  </section>  <section id="faq">
+    <h2>자주 묻는 질문</h2>
+    <div class="grid">
+      <div class="card"><strong>Q. 아무나 참여 가능한가요?</strong><br>직업 인증 또는 추천을 통해 신뢰 기반 참여가 이뤄집니다.</div>
+      <div class="card"><strong>Q. TableMate는 소개팅 서비스인가요?</strong><br>아니요. TableMate는 <strong>지적 대화를 위한 인사이트 공유 플랫폼</strong>입니다. 남녀 만남을 위한 서비스가 아닙니다.</div>
+      <div class="card"><strong>Q. 장소는 어디서 진행되나요?</strong><br>검증된 <strong>핫플레이스 맛집</strong>에서 진행됩니다.</div>
+      <div class="card"><strong>Q. 어떤 인사이트를 공유하나요?</strong><br>직업 이야기, 경험담, 취미, 업계 트렌드 등 누구나 공유할 수 있는 주제를 중심으로 진행됩니다.</div>
+    </div>
+  </section>  <footer>
+    <p>&copy; 2025 TableMate. All rights reserved. Made with 🍷 & 🍣</p>
+  </footer>
+</body>
+</html>
